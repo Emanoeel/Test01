@@ -1,0 +1,23 @@
+ID int,
+Namn varchar(50),
+Telefon varchar(20),
+primary key(MedlemID,Telefon)
+)
+insert into Telefon
+values(2,'Lisa Olsson','0607554632');
+
+
+
+update Hund
+set FarRegNr='AKCHD185436'
+where Namn = 'Lufsen'
+
+
+
+Alter Table Hund
+Add Constraint fk_morreg foreign key(RegNr) 
+references Hund(RegNr) On update cascade;
+
+select Namn,Ras, from Medlem
+
+where Betalt = 'Ne
